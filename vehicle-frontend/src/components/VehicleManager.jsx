@@ -20,8 +20,8 @@ const VehicleManager = () => {
   const [message, setMessage] = useState("");
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}`; 
-//   const baseUrl = `${config.url}/vehicleapi`; 
+ 
+ const baseUrl = `${import.meta.env.VITE_API_URL}/vehicleapi`;
 
   useEffect(() => {
     fetchAllVehicles();
